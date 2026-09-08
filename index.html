@@ -3,358 +3,309 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Miftah Nurjamil - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <title>Miftah Nurjamil — Software Engineer & IT Supervisor</title>
+    <link rel="icon" type="image/jpeg" href="assets/images/miftah-nurjamil.jpeg" />
+    <link rel="apple-touch-icon" href="assets/images/miftah-nurjamil.jpeg" />
+    <meta
+      name="description"
+      content="Portofolio Miftah Nurjamil. Software engineer, frontend developer, dan IT supervisor dengan pengalaman lebih dari 8 tahun di SIMRS, integrasi BPJS & Satu Sehat, serta dukungan sistem dan jaringan."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Background Music -->
-    <audio id="bgMusic" autoplay loop muted>
-      <source src="assets/audio/music_bg.mp3" type="audio/mpeg" />
-    </audio>
+    <a class="skip-link" href="#ringkasan">Lewati ke konten</a>
 
-    <!-- Audio Control Overlay -->
-    <div class="audio-control" id="audioControl">
-      <div class="cd-player">
-        <div class="cd-disc" id="cdDisc">
-          <div class="cd-center"></div>
-          <div class="cd-line"></div>
-          <div class="cd-line cd-line-2"></div>
-          <div class="cd-line cd-line-3"></div>
-          <div class="cd-line cd-line-4"></div>
-        </div>
-        <div class="cd-icon">
-          <i class="fas fa-music"></i>
-        </div>
-      </div>
-    </div>
-
-    <!-- Header Section -->
-    <header class="header">
-      <div class="container">
-        <div class="header-content">
-          <div class="header-text">
-            <h1>MIFTAH NURJAMIL</h1>
-            <p class="subtitle">PROGRAMMER - SYSTEM IMPLEMENTATOR</p>
-            <p class="description">
-              Saya seorang Programmer selama 4 tahun di perusahaan konsultan IT
-              yang bergerak di bidang Sistem Manajemen Rumah Sakit (SIMRS) di
-              Bandung. Serta saya juga sebagai System Implementator yang
-              bertugas untuk DevOps Sistem dan melakukan pelatihan terhadap
-              karyawan rumah sakit yang baru bergabung.
-            </p>
-            <p class="description">
-              Serta saya mempunyai hobi di bidang Desain grafis dan Olahraga
-            </p>
-          </div>
-          <div class="header-image">
-            <div class="profile-pic">
-              <img src="assets/images/Me.jpg" alt="Miftah Nurjamil" />
-            </div>
-            <a href="#pendidikan" class="btn-detail">
-              <i class="fas fa-arrow-down"></i>
-              Lihat Detail
-            </a>
-          </div>
-        </div>
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="#ringkasan">
+          <img
+            class="brand-photo"
+            src="assets/images/miftah-nurjamil.jpeg"
+            alt=""
+          />
+          Portofolio Miftah Nurjamil
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+          Menu
+        </button>
+        <nav class="nav-links" id="navLinks">
+          <a href="#ringkasan">Ringkasan</a>
+          <a href="#pengalaman">Pengalaman</a>
+          <a href="#keahlian">Keahlian</a>
+          <a href="#karya">Karya</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="main-content">
-      <div class="container">
-        <div class="content-grid">
-          <!-- Left Column -->
-          <div class="left-column">
-            <!-- Pendidikan Section -->
-            <section class="section" id="pendidikan">
-              <h2><i class="fas fa-graduation-cap"></i> PENDIDIKAN</h2>
-              <div class="education-item">
-                <h3>UNIVERSITAS LANGLANGBUANA BANDUNG</h3>
-                <p class="detail">S1 Teknik Informatika</p>
-                <p class="year">2023 - SEKARANG</p>
-              </div>
-              <div class="education-item">
-                <h3>POLITEKNIK LP3I BANDUNG</h3>
-                <p class="detail">DIII Manajemen Informatika</p>
-                <p class="year">2013 - 2016</p>
-              </div>
-            </section>
-
-            <!-- Pengalaman Kerja Section -->
-            <section class="section">
-              <h2><i class="fas fa-briefcase"></i> PENGALAMAN KERJA</h2>
-
-              <div class="experience-item">
-                <h3>RS JANTUNG TASIKMALAYA | 2024 - 2025</h3>
-                <p class="position">
-                  IT Programmer - IMPLEMENTATOR - IT SUPPORT
-                </p>
-                <p class="detail">
-                  Bekerja sebagai Staf IT pada tahun 2024 yang mempunyai tugas
-                  sebagai programmer dan implementator kepada user di rumah
-                  sakit. Sebagai Staf IT bertugas sebagai IT Support dengan
-                  skill yaitu pelatihan sistem kepada user di rumah sakit, salah
-                  in bertugas sebagai IT Support Jasan pengolahan jaringan,
-                  hardware (termasuk CCTV, Helpdesk dan lainnya) dll serta
-                  audit.
-                </p>
-              </div>
-
-              <div class="experience-item">
-                <h3>RSIA RESPATI TASIKMALAYA | 2019- 2023</h3>
-                <p class="position">IT Programmer - IT Support</p>
-                <p class="detail">
-                  Bekerja sebagai Staff IT pada tahun 2019 – 2021 dan KCEH
-                  Fullstack Programmer di tahun 2021 – 2023, bertugas dalam
-                  pengembangan dan integrasi SIMRS dengan pihak external
-                  (Kemenkes) dan lain-lain. Serta pengolahan kebutuhan hardware
-                  dan software serta jaringannya.
-                </p>
-              </div>
-
-              <div class="experience-item">
-                <h3>PT Jasamedika Saranatama Bandung | 2015 - 2019</h3>
-                <p class="position">ANALYST PROGRAMMER</p>
-                <p class="detail">
-                  Bekerja sebagai analisis programmer dan programmer konsultan
-                  IT sebagai Frontend Programming di bidang production dan
-                  Implementator di PHP Programming
-                </p>
-              </div>
-            </section>
-
-            <!-- Pelatihan Section -->
-            <section class="section">
-              <h2>
-                <i class="fas fa-certificate"></i> PELATIHAN YANG DI IKUTI
-              </h2>
-              <ul class="training-list">
-                <li><strong>2012 - 2016</strong> : Ketua Karang Taruna RW</li>
-                <li><strong>2019 - 2021</strong> : Anggota Pokmas Kelurahan</li>
-                <li>
-                  <strong>2024</strong> : Ketua KPPS Pemilu dan PILKADA 2024
-                </li>
-              </ul>
-            </section>
-
-            <!-- Portfolio Section -->
-            <section class="section" id="portfolio">
-              <h2><i class="fas fa-folder-open"></i> PORTOFOLIO</h2>
-              <div class="portfolio-links">
-                <p>
-                  Aplikasi Website Literasi Kebdayaan Aksara Sunda<br />
-                  <a href="https://sikabayan.com" target="_blank"
-                    >https://sikabayan.com</a
-                  ><br />
-                  (Menggunakan React.js dan Laravel 10)
-                </p>
-              </div>
-              <div class="portfolio-links">
-                <p>
-                  Landing Page<br />
-                  <a href="https://bit.ly/lp-miftah" target="_blank"
-                    >https://bit.ly/lp-miftah</a
-                  ><br />
-                  (Menggunakan HTML5, CSS3, dan JavaScript)
-                </p>
-              </div>
-              <div class="portfolio-links">
-                <p>
-                  Dashboard Apps RS JHC Tasikmalaya<br />
-                  <a href="https://bit.ly/app-jhctasik" target="_blank"
-                    >https://bit.ly/app-jhctasik</a
-                  ><br />
-                  Kumpulan aplikasi internal rumah sakit.
-                </p>
-              </div>
-            </section>
+    <main>
+      <section class="hero" id="ringkasan">
+        <div class="hero-copy">
+          <p class="pill"><span class="dot"></span> Software engineer · IT supervisor</p>
+          <h1>Miftah Nurjamil, S.Kom</h1>
+          <div class="lead">
+            <p>
+              Saya software engineer dan IT supervisor dengan pengalaman lebih dari 8 tahun.
+              Pekerjaan saya mulai dari membangun aplikasi web dan menganalisis kebutuhan,
+              sampai memastikan sistem tetap dipakai di operasional sehari-hari.
+            </p>
+            <p>
+              Di lingkungan rumah sakit, saya menangani SIMRS, integrasi BPJS dan Satu Sehat,
+              jaringan, helpdesk, serta pelatihan pengguna. Saat ini saya bekerja sebagai
+              software engineer di PT Bumka Tekno Sains, Garut.
+            </p>
+            <p>
+              Beberapa hasilnya sudah diakui, antara lain aplikasi web Sikabayan.com yang
+              masuk Top 50 Lomba Kementerian Kebudayaan, dan JQ Assistant yang meraih
+              penghargaan Silver pada Kaizen Nasional 2025.
+            </p>
           </div>
 
-          <!-- Right Column -->
-          <div class="right-column">
-            <!-- Kemampuan Section -->
-            <section class="section">
-              <h2><i class="fas fa-cogs"></i> KEMAMPUAN</h2>
-              <div class="skills-grid">
-                <div class="skill-item">
-                  <div class="skill-icon">
-                    <i class="fas fa-code"></i>
-                  </div>
-                  <p>PROGRAMMING</p>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-icon">
-                    <i class="fas fa-tools"></i>
-                  </div>
-                  <p>IT IMPLEMENTATOR</p>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-icon">
-                    <i class="fas fa-headset"></i>
-                  </div>
-                  <p>IT SUPPORT</p>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-icon">
-                    <i class="fas fa-paint-brush"></i>
-                  </div>
-                  <p>DESAIN GRAFIS</p>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-icon">
-                    <i class="fas fa-laptop-code"></i>
-                  </div>
-                  <p>MICROSOFT OFFICE</p>
-                </div>
-              </div>
-            </section>
+          <div class="meta-row">
+            <article>
+              <span>Peran</span>
+              <strong>Software Engineer &amp; IT Supervisor</strong>
+            </article>
+            <article>
+              <span>Fokus</span>
+              <strong>Aplikasi web, SIMRS, BPJS &amp; Satu Sehat</strong>
+            </article>
+            <article>
+              <span>Saat ini</span>
+              <strong>PT Bumka Tekno Sains, Garut</strong>
+            </article>
+          </div>
 
-            <!-- Keahlian Section -->
-            <section class="section">
-              <h2><i class="fas fa-star"></i> KEAHLIAN</h2>
-              <ul class="expertise-list">
-                <li><i class="fas fa-check"></i> Manajemen Tim</li>
-                <li><i class="fas fa-check"></i> Kerjasama Tim</li>
-                <li><i class="fas fa-check"></i> Memberikan solusi terbaik</li>
-                <li><i class="fas fa-check"></i> Service Excellent</li>
-                <li><i class="fas fa-check"></i> Analisis</li>
-              </ul>
-            </section>
-
-            <!-- Organisasi Section -->
-            <section class="section">
-              <h2><i class="fas fa-users"></i> ORGANISASI YANG DI IKUTI</h2>
-              <ul class="org-list">
-                <li><strong>2012 - 2016</strong> : Ketua Karang Taruna RW</li>
-                <li><strong>2019 - 2021</strong> : Anggota Pokmas Kelurahan</li>
-                <li>
-                  <strong>2024</strong> : Ketua KPPS Pemilu dan PILKADA 2024
-                </li>
-              </ul>
-            </section>
-
-            <!-- Catatan Yang Perlu Section -->
-            <section class="section">
-              <h2><i class="fas fa-clipboard"></i> CATATAN YANG PERLU</h2>
-              <div class="notes">
-                <h3>Lomba Inovasi (Kaizen)</h3>
-                <p>
-                  2024 - Juara 2 di Rumah Sakit Frista (Face Recognition)" untuk
-                  efisiensi waktu tunggu antrian di poliklinik
-                </p>
-                <p>
-                  2025 - Judul lomba "Aplikasi JQ Assistant" untuk eliminasi
-                  waktu tunggu pasien di admisi (Juara 2)
-                </p>
-              </div>
-            </section>
-
-            <!-- Kontak Section -->
-            <section class="section">
-              <h2><i class="fas fa-phone"></i> KONTAK PERSON</h2>
-              <div class="contact-info">
-                <div class="contact-item">
-                  <i class="fas fa-mobile-alt"></i>
-                  <span>+085 322 722 629</span>
-                </div>
-                <div class="contact-item">
-                  <i class="fas fa-envelope"></i>
-                  <span>miftahnurjamil21@gmail.com</span>
-                </div>
-              </div>
-            </section>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#kontak">Hubungi saya</a>
+            <a class="btn btn-line" href="#pengalaman">Lihat pengalaman</a>
           </div>
         </div>
-      </div>
+
+        <aside class="hero-visual">
+          <figure class="portrait">
+            <img src="assets/images/miftah-nurjamil.jpeg" alt="Foto profil Miftah Nurjamil" />
+            <figcaption>Foto resmi</figcaption>
+          </figure>
+          <div class="portrait-card" id="kontak">
+            <p class="label">Kontak</p>
+            <a href="mailto:miftahnurjamil21@gmail.com">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4V6zm0 0 8 7 8-7"/></svg>
+              </span>
+              miftahnurjamil21@gmail.com
+            </a>
+            <a href="https://wa.me/6285156615610" target="_blank" rel="noopener noreferrer">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M8 4h3l1 4-2 1a12 12 0 0 0 5 5l1-2 4 1v3c0 1-1 2-2 2C10 20 4 14 4 6c0-1 1-2 2-2z"/></svg>
+              </span>
+              0851-5661-5610
+            </a>
+            <a href="https://bit.ly/porto-miftah" target="_blank" rel="noopener noreferrer">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg>
+              </span>
+              bit.ly/porto-miftah
+            </a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="pengalaman">
+        <div class="section-head">
+          <p class="pill">Pengalaman</p>
+          <h2>Pengalaman kerja</h2>
+        </div>
+        <div class="experience-list">
+          <article class="job">
+            <div class="job-top">
+              <div>
+                <h3>Software Engineer</h3>
+                <p class="org">PT Bumka Tekno Sains, Garut</p>
+              </div>
+              <p class="when">2026 — sekarang</p>
+            </div>
+            <p class="result">Hasil: aplikasi tetap selaras dengan kebutuhan pengguna.</p>
+            <ul>
+              <li>Membangun dan memelihara aplikasi, bukan hanya menambah fitur.</li>
+              <li>Menelusuri masalah perangkat lunak sampai ketemu penyebabnya.</li>
+              <li>Berkoordinasi dengan tim agar sistem mengikuti cara kerja pengguna.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <div class="job-top">
+              <div>
+                <h3>Staf IT / IT Support</h3>
+                <p class="org">RS Jantung Tasikmalaya</p>
+              </div>
+              <p class="when">2024 — 2026</p>
+            </div>
+            <p class="result">Hasil: layanan rumah sakit tidak berhenti karena gangguan IT.</p>
+            <ul>
+              <li>Menjaga SIMRS, PC, printer, CCTV, dan jaringan tetap berjalan.</li>
+              <li>Menangani helpdesk agar kendala user cepat selesai.</li>
+              <li>Mendukung inovasi JQ Assistant untuk memangkas waktu tunggu pasien.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <div class="job-top">
+              <div>
+                <h3>IT Supervisor</h3>
+                <p class="org">RSIA Respati Tasikmalaya</p>
+              </div>
+              <p class="when">2019 — 2024</p>
+            </div>
+            <p class="result">Hasil: infrastruktur dan SIMRS rumah sakit tetap stabil.</p>
+            <ul>
+              <li>Memimpin tim IT dan menyusun prioritas gangguan harian.</li>
+              <li>Menjaga database, jaringan, dan sistem informasi tetap aman.</li>
+              <li>Mendukung integrasi SIMRS dengan BPJS dan Satu Sehat.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <div class="job-top">
+              <div>
+                <h3>Frontend Developer / Analyst Programmer</h3>
+                <p class="org">PT Jasamedika, Bandung</p>
+              </div>
+              <p class="when">2015 — 2019</p>
+            </div>
+            <p class="result">Hasil: tampilan aplikasi siap dipakai klien konsultan SIMRS.</p>
+            <ul>
+              <li>Membangun frontend aplikasi web di sisi production.</li>
+              <li>Menganalisis kebutuhan sebelum pengembangan dimulai.</li>
+              <li>Mendampingi implementasi sistem informasi untuk klien.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="keahlian">
+        <div class="section-head">
+          <p class="pill">Keahlian</p>
+          <h2>Keahlian</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="panel">
+            <h3>Software</h3>
+            <ul class="tags">
+              <li>Software engineering</li>
+              <li>Web application</li>
+              <li>Frontend development</li>
+              <li>Analyst programmer</li>
+              <li>Analisis sistem</li>
+              <li>MySQL &amp; SQL dasar</li>
+              <li>Integrasi SIMRS</li>
+              <li>BPJS &amp; Satu Sehat</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <h3>Sistem &amp; dukungan</h3>
+            <ul class="tags">
+              <li>IT support &amp; helpdesk</li>
+              <li>Troubleshooting hardware</li>
+              <li>LAN / WAN &amp; router</li>
+              <li>Konfigurasi IP</li>
+              <li>Windows &amp; Office</li>
+              <li>Printer, CCTV, telepon</li>
+              <li>User training</li>
+              <li>Team management</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="karya">
+        <div class="section-head">
+          <p class="pill">Karya</p>
+          <h2>Karya dan prestasi</h2>
+        </div>
+        <div class="work-grid">
+          <article class="panel work-card work-featured">
+            <div class="case-visual" aria-hidden="true">
+              <span class="case-bar"><i></i> sikabayan.com</span>
+              <strong>Literasi Aksara Sunda</strong>
+              <em>Top 50 Kementerian Kebudayaan</em>
+            </div>
+            <div class="work-body">
+              <p class="label">Aplikasi web</p>
+              <h3>Sikabayan.com</h3>
+              <p>Aplikasi literasi budaya yang bisa dibuka publik. Masuk Top 50 Lomba Kementerian Kebudayaan.</p>
+              <a href="https://sikabayan.com" target="_blank" rel="noopener noreferrer">Buka sikabayan.com</a>
+            </div>
+          </article>
+          <article class="panel work-card">
+            <div class="case-seal" aria-hidden="true">Silver</div>
+            <div class="work-body">
+              <p class="label">Kaizen Nasional 2025</p>
+              <h3>JQ Assistant</h3>
+              <p>Aplikasi untuk mengurangi waktu tunggu pasien di admisi. Penghargaan Silver.</p>
+            </div>
+          </article>
+          <article class="panel work-card">
+            <div class="case-seal case-seal-system" aria-hidden="true">SIMRS</div>
+            <div class="work-body">
+              <p class="label">Sistem kesehatan</p>
+              <h3>Integrasi BPJS &amp; Satu Sehat</h3>
+              <p>Menghubungkan SIMRS rumah sakit dengan BPJS dan Satu Sehat agar data layanan tetap tersambung.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="panel">
+          <p class="pill">Pendidikan</p>
+          <div class="edu-item">
+            <span>2026</span>
+            <div>
+              <h3>S1 Teknik Informatika</h3>
+              <p>Universitas Langlangbuana, Bandung</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span>2016</span>
+            <div>
+              <h3>D3 Manajemen Informatika</h3>
+              <p>Politeknik LP3I Bandung</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <p class="pill">Organisasi</p>
+          <ul class="org-list">
+            <li><span>2024</span> Ketua KPPS Pemilu dan Pilkada</li>
+            <li><span>2019 — 2021</span> Anggota POKMAS Kelurahan</li>
+            <li><span>2012 — 2015</span> Ketua Karang Taruna</li>
+          </ul>
+        </div>
+      </section>
+
     </main>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top" title="Kembali ke atas">
-      <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <p>&copy; 2025 Miftah Nurjamil. All rights reserved.</p>
-      </div>
+      <p>© 2026 Miftah Nurjamil</p>
     </footer>
 
-    <script>
-      // Audio Control Script
-      const audio = document.getElementById("bgMusic");
-      const audioControl = document.getElementById("audioControl");
-      const cdDisc = document.getElementById("cdDisc");
-      const backToTopBtn = document.getElementById("backToTop");
+    <button class="to-top" id="toTop" type="button" aria-label="Kembali ke atas" hidden>
+      <span aria-hidden="true"></span>
+    </button>
+    <button class="music" id="musicBtn" type="button" aria-pressed="true" aria-label="Jeda musik" title="Jeda musik">
+      <span class="disc" aria-hidden="true">
+        <span class="disc-face"></span>
+        <span class="disc-hole"></span>
+      </span>
+    </button>
+    <audio id="bgMusic" autoplay loop preload="auto" playsinline>
+      <source src="assets/audio/music_bg.mp3" type="audio/mpeg" />
+    </audio>
 
-      // Set initial volume to 50% and unmute
-      audio.volume = 0.5;
-      audio.muted = false;
-
-      // Try to autoplay
-      const startAudio = () => {
-        audio
-          .play()
-          .then(() => {
-            cdDisc.classList.add("spinning");
-          })
-          .catch(() => {
-            // Autoplay failed, unmute and play on first click
-            document.addEventListener(
-              "click",
-              () => {
-                audio.muted = false;
-                audio.play();
-                cdDisc.classList.add("spinning");
-              },
-              { once: true }
-            );
-          });
-      };
-
-      // Start audio when page loads
-      window.addEventListener("load", startAudio);
-
-      // Play/Pause Toggle with CD animation
-      audioControl.addEventListener("click", (e) => {
-        e.stopPropagation();
-        if (audio.paused) {
-          audio.play();
-          cdDisc.classList.add("spinning");
-        } else {
-          audio.pause();
-          cdDisc.classList.remove("spinning");
-        }
-      });
-
-      // Start spinning on load if autoplay works
-      audio.addEventListener("play", () => {
-        cdDisc.classList.add("spinning");
-      });
-
-      audio.addEventListener("pause", () => {
-        cdDisc.classList.remove("spinning");
-      });
-
-      // Back to Top Button
-      window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 300) {
-          backToTopBtn.classList.add("show");
-        } else {
-          backToTopBtn.classList.remove("show");
-        }
-      });
-
-      backToTopBtn.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
