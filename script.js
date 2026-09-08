@@ -90,3 +90,39 @@ window.addEventListener("scroll", () => {
 toTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+const pdfModal = document.getElementById("pdfModal");
+const pdfFrame = document.getElementById("pdfFrame");
+const pdfTitle = document.getElementById("pdfTitle");
+const pdfClose = document.getElementById("pdfClose");
+
+function openPdf(url, title) {
+  pdfTitle.textContent = title || "Sertifikat";
+  pdfFrame.src = url;
+  pdfModal.hidden = false;
+  document.body.classList.add("modal-open");
+  pdfClose.focus();
+}
+
+function closePdf() {
+  pdfModal.hidden = true;
+  pdfFrame.src = "";
+  document.body.classList.remove("modal-open");
+}
+
+document.querySelectorAll(".js-pdf").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    openPdf(link.getAttribute("href"), link.dataset.title);
+  });
+});
+
+pdfClose.addEventListener("click", closePdf);
+
+pdfModal.addEventListener("click", (event) => {
+  if (event.target === pdfModal) closePdf();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !pdfModal.hidden) closePdf();
+});

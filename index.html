@@ -227,36 +227,54 @@
           <h2>Karya dan prestasi</h2>
         </div>
         <div class="work-grid">
-          <article class="panel work-card work-featured">
-            <div class="case-visual" aria-hidden="true">
-              <span class="case-bar"><i></i> sikabayan.com</span>
-              <strong>Literasi Aksara Sunda</strong>
-              <em>Top 50 Kementerian Kebudayaan</em>
+          <article class="panel work-card">
+            <div class="case-visual">
+              <span class="case-mark">Web</span>
+              <strong>Sikabayan</strong>
+              <em>Top 50 Kebudayaan</em>
             </div>
             <div class="work-body">
               <p class="label">Aplikasi web</p>
               <h3>Sikabayan.com</h3>
-              <p>Aplikasi literasi budaya yang bisa dibuka publik. Masuk Top 50 Lomba Kementerian Kebudayaan.</p>
-              <a href="https://sikabayan.com" target="_blank" rel="noopener noreferrer">Buka sikabayan.com</a>
+              <p>Aplikasi literasi Aksara Sunda yang bisa dibuka publik.</p>
+              <div class="work-actions">
+                <a class="btn-view js-pdf" href="assets/pdf/MIFTAH-NURJAMIL-Sertifikat-Sikabayan.pdf" data-title="Sertifikat Sikabayan">View sertifikat</a>
+                <a class="btn-view js-pdf" href="assets/pdf/HAKI-Sikabayan.pdf" data-title="HAKI Sikabayan">View HAKI</a>
+                <a class="btn-view btn-view-solid" href="https://sikabayan.com" target="_blank" rel="noopener noreferrer">Buka situs</a>
+              </div>
             </div>
           </article>
           <article class="panel work-card">
-            <div class="case-seal" aria-hidden="true">Silver</div>
+            <div class="case-visual case-visual-award">
+              <span class="case-mark">2025</span>
+              <strong>Silver</strong>
+              <em>Kaizen Nasional</em>
+            </div>
             <div class="work-body">
-              <p class="label">Kaizen Nasional 2025</p>
+              <p class="label">Penghargaan</p>
               <h3>JQ Assistant</h3>
-              <p>Aplikasi untuk mengurangi waktu tunggu pasien di admisi. Penghargaan Silver.</p>
+              <p>Aplikasi untuk mengurangi waktu tunggu pasien di admisi.</p>
+              <div class="work-actions">
+                <a class="btn-view js-pdf" href="assets/pdf/MIFTAH-NURJAMIL-Sertifikat-Kaizen.pdf" data-title="Sertifikat Kaizen">View sertifikat</a>
+              </div>
             </div>
           </article>
           <article class="panel work-card">
-            <div class="case-seal case-seal-system" aria-hidden="true">SIMRS</div>
+            <div class="case-visual case-visual-system">
+              <span class="case-mark">RS</span>
+              <strong>SIMRS</strong>
+              <em>BPJS &amp; Satu Sehat</em>
+            </div>
             <div class="work-body">
               <p class="label">Sistem kesehatan</p>
-              <h3>Integrasi BPJS &amp; Satu Sehat</h3>
-              <p>Menghubungkan SIMRS rumah sakit dengan BPJS dan Satu Sehat agar data layanan tetap tersambung.</p>
+              <h3>Integrasi layanan</h3>
+              <p>Menghubungkan SIMRS rumah sakit dengan BPJS dan Satu Sehat.</p>
             </div>
           </article>
         </div>
+        <p class="more-proof">
+          <a class="btn-view js-pdf" href="assets/pdf/MIFTAH-NURJAMIL_Sertifikat-lainnya.pdf" data-title="Sertifikat lainnya">View sertifikat lainnya</a>
+        </p>
       </section>
 
       <section class="section split">
@@ -305,6 +323,16 @@
     <audio id="bgMusic" autoplay loop preload="auto" playsinline>
       <source src="assets/audio/music_bg.mp3" type="audio/mpeg" />
     </audio>
+
+    <div class="pdf-modal" id="pdfModal" hidden>
+      <div class="pdf-dialog" role="dialog" aria-modal="true" aria-labelledby="pdfTitle">
+        <div class="pdf-bar">
+          <p id="pdfTitle">Sertifikat</p>
+          <button class="pdf-close" id="pdfClose" type="button" aria-label="Tutup">Tutup</button>
+        </div>
+        <iframe id="pdfFrame" title="Pratinjau sertifikat"></iframe>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
